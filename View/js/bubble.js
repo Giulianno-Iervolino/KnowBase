@@ -16,15 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const hideClassName = "hide";
 
   const appKey =
-    "cm91dGVyY2lhczoyYzk5OGM5MC1lNjA1LTQ0MTQtOTVjNy1kN2JlNDM1YjdmYzM=";
+    "cm91dGVybmV4YTplOGMzMjkyMy04NjQzLTQ1NDAtYTdjNS1hZGM2Nzg2NWMyNWE=";
 
-  const customUrl = "https://giulianno-iervolino-cbzqp.chat.blip.ai/";
   const bottomImage =
     "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-white-vector.svg";
   const topImage =
-    "https://blipmediastore.blob.core.windows.net/public-medias/Media_24f41f95-57b6-4e54-a05e-7129101c688f";
+    "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-gray-vector.svg";
 
-  const bubbleMessage = "Olá, posso ajudar ?";
+  const bubbleMessage = "Olá, posso ajudar?";
 
   const startMessage = {
     type: "text/plain",
@@ -97,11 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   client
     .withAppKey(appKey)
-    .withButton({
-      color: startingColor,
-      icon: "https://blipmediastore.blob.core.windows.net/public-medias/Media_24f41f95-57b6-4e54-a05e-7129101c688f",
-    })
-
+    .withButton({ color: startingColor })
     .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
       client.sendMessage(startMessage);
     })
@@ -114,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
       closeIcon.classList.add(hideClassName);
       closeIcon.classList.remove(displayClassName);
     })
-    .withCustomCommonUrl(customUrl)
     .build();
 
   replaceImageStructure();
