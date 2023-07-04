@@ -16,5 +16,17 @@
     <br />
     Novo
 </body>
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+                .withAppKey('cHJpbmNpcGFsY2lhczoxN2ZmNGQxOS1hMjYzLTQ0MmItYmE3Mi00NTVkMTk3YzM1OGU=')
+                .withButton({ "color": "#0096fa", "icon": "" })
+                .withCustomCommonUrl('https://giulianno-iervolino-cbzqp.chat.blip.ai/')
+                .build();
+        }
+    })();
+</script>
 
 </html>
