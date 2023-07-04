@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const appKey =
     "cm91dGVyY2lhczoyYzk5OGM5MC1lNjA1LTQ0MTQtOTVjNy1kN2JlNDM1YjdmYzM=";
 
+  const customUrl = "https://giulianno-iervolino-cbzqp.chat.blip.ai/";
   const bottomImage =
     // "https://blipmediastore.blob.core.windows.net/public-medias/Media_24f41f95-57b6-4e54-a05e-7129101c688f";
     "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-white-vector.svg";
@@ -99,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
   client
     .withAppKey(appKey)
     .withButton({ color: startingColor })
-    .withCustomCommonUrl("https://giulianno-iervolino-cbzqp.chat.blip.ai/")
+    .withCustomCommonUrl(customUrl)
     .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
       client.sendMessage(startMessage);
     })
