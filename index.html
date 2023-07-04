@@ -11,11 +11,23 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/View/style/default.css">
-    <script src="/View/js/blip-chat.js"></script>
-    <script src="/View/js/bubble.js"></script>
-    <link rel="stylesheet" href="/View/style/bubble.css">
+    <!-- <script src="/View/js/blip-chat.js"></script> -->
+    <!-- <script src="/View/js/bubble.js"></script> -->
+    <!-- <link rel="stylesheet" href="/View/style/bubble.css"> -->
 
     <title>KnowBase</title>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('cm91dGVyY2lhczoyYzk5OGM5MC1lNjA1LTQ0MTQtOTVjNy1kN2JlNDM1YjdmYzM=')
+                    .withButton({ "color": "#73bd7b", "icon": "https://blipmediastore.blob.core.windows.net/public-medias/Media_24f41f95-57b6-4e54-a05e-7129101c688f" })
+                    .withCustomCommonUrl('https://giulianno-iervolino-cbzqp.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
 
 </head>
 
