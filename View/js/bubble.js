@@ -99,11 +99,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   client
     .withAppKey(appKey)
-    .withButton({ color: startingColor })
-    .withCustomCommonUrl(customUrl)
-    .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
-      client.sendMessage(startMessage);
+    .withButton({
+      color: startingColor,
+      icon: "https://blipmediastore.blob.core.windows.net/public-medias/Media_24f41f95-57b6-4e54-a05e-7129101c688f",
     })
+    .withCustomCommonUrl(customUrl)
+    // .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
+    // client.sendMessage(startMessage);
+    // })
     .withEventHandler(BlipChat.ENTER_EVENT, function () {
       closeIcon.classList.add(displayClassName);
       closeIcon.classList.remove(hideClassName);
