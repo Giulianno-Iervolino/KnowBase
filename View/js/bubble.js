@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const topImage =
     "https://blipmediastore.blob.core.windows.net/public-medias/Media_24f41f95-57b6-4e54-a05e-7129101c688f";
 
-  const bubbleMessage = "Olá, posso ajudar?";
+  const bubbleMessage = "Olá, posso ajudar ?";
 
   const startMessage = {
     type: "text/plain",
