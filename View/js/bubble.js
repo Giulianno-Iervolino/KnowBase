@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hideClassName = "hide";
 
   const appKey =
-    "aGVucmlxdWVib3QxOmE5YTg2OGFmLTY5NDctNGQ3OC04NTUwLTU0ZGMxNjUyMjI3Ng==";
+    "cm91dGVyY2lhczoyYzk5OGM5MC1lNjA1LTQ0MTQtOTVjNy1kN2JlNDM1YjdmYzM=";
 
   const bottomImage =
     "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-white-vector.svg";
