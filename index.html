@@ -2,37 +2,79 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/View/style/default.css" />
-    <!-- ------------------ -->
-    <!-- <script src="View/js/blip-chat.js"></script> -->
-    <!-- <script src="View/js/bubble.js"></script> -->
-    <!-- <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script> -->
-    <!-- <link rel="stylesheet" href="View/style/bubble.css"> -->
-    <!-- ----------------- -->
-    <title>KnowBase</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <script src="/View/js/blip-chat.js"></script>
+    <script src="/View/js/bubble.js"></script>
+    <link rel="stylesheet" href="/View/style/bubble.css">
+
+    <style>
+        body {
+            font-family: 'Roboto';
+        }
+
+        .description {
+            max-width: 300px;
+            width: 80%;
+
+            display: flex;
+            flex-direction: column;
+
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        .description label {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4e4d4d;
+            font-family: 'Montserrat';
+        }
+
+        .description p {
+            color: gray;
+            text-align: justify;
+        }
+
+        .action {
+            margin-top: 25px;
+            background-color: #8086f0 !important;
+        }
+    </style>
+
+    <title>Message bubble</title>
+
 </head>
 
 <body>
-    <br />
-    Página em Desenvolvimento
-    <br />
+
+    <div class="description">
+
+        <label>Message Bubble</label>
+        <p>
+            Chat com animações do icone customizados,
+            e balão com uma mensagem, que some depois de um tempo.
+        </p>
+        <p>
+            Chama a atenção, mas não incomoda.
+        </p>
+
+        <button class="btn waves-effect waves-light action" onclick="changeBubble()">
+            Mudar Balão
+        </button>
+
+    </div>
+
 </body>
-
-<script>
-    (function () {
-        window.onload = function () {
-            new BlipChat()
-                .withAppKey('cm91dGVyY2lhczoyYzk5OGM5MC1lNjA1LTQ0MTQtOTVjNy1kN2JlNDM1YjdmYzM=')
-                .withButton({ "color": "#73bd7b", "icon": "https://blipmediastore.blob.core.windows.net/public-medias/Media_24f41f95-57b6-4e54-a05e-7129101c688f" })
-                .withCustomCommonUrl('https://giulianno-iervolino-cbzqp.chat.blip.ai/')
-                .build();
-        }
-    })();
-</script>
-
-
 
 </html>
