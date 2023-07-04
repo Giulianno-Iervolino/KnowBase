@@ -15,9 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const displayClassName = "display";
   const hideClassName = "hide";
 
-  const appKey =
-    "cm91dGVybmV4YTplOGMzMjkyMy04NjQzLTQ1NDAtYTdjNS1hZGM2Nzg2NWMyNWE=";
+  // const appKey =
+  // "cm91dGVybmV4YTplOGMzMjkyMy04NjQzLTQ1NDAtYTdjNS1hZGM2Nzg2NWMyNWE=";
 
+  const chatKey =
+    "cm91dGVybmV4YTplOGMzMjkyMy04NjQzLTQ1NDAtYTdjNS1hZGM2Nzg2NWMyNWE=";
   const bottomImage =
     "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-white-vector.svg";
   const topImage =
@@ -95,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   client
-    .withAppKey(appKey)
+    .withAppKey(chatKey)
     .withButton({ color: startingColor })
     .withEventHandler(BlipChat.CREATE_ACCOUNT_EVENT, function () {
       client.sendMessage(startMessage);
