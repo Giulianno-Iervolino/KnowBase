@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const chatKey =
     "cm91dGVybmV4YTplOGMzMjkyMy04NjQzLTQ1NDAtYTdjNS1hZGM2Nzg2NWMyNWE=";
   const bottomImage =
-    "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-white-vector.svg";
+    // "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-white-vector.svg";
+    "View/img/Elis_Pose_A_sem_bg.png";
   const topImage =
     "https://s3-sa-east-1.amazonaws.com/infobots/fiat/customer-care/icon-gray-vector.svg";
 
