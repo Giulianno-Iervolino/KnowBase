@@ -19,18 +19,50 @@ body > div:nth-of-type(even) {
 .grid-template-areas {
   margin: 0px;
   grid-template-columns: 5% auto 5%;
-  grid-template-rows: 15% auto 10%;
+  grid-template-rows: 6% 15% auto 10%;
   grid-template-areas:
+    "cnt  cnt cnt"
     "head head head"
     "sideA content sideB"
     "footer footer footer";
 }
 
+.cnt {
+  color: white;
+  display: grid;
+  grid-area: cnt;
+  background-color: rgb(48, 41, 130);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "eml  rsoc";
+}
+.cnt a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+.eml {
+  grid-area: eml;
+  align-self: center;
+  text-align: center;
+}
+
+.rsoc {
+  grid-area: rsoc;
+  align-self: center;
+  text-align: center;
+}
+
 .head {
   grid-area: head;
+  /* position: fixed; */
+  position: static;
 }
-.head header {
-  background-image: url("nexa/View/img/nexa_logo.png");
+.hdr {
+  background-image: url("../img/nexa_logo.png");
+  background-size: 300px 100px;
+  background-repeat: no-repeat;
+  /* background-position: center center; */
 }
 
 .sideA {
@@ -51,14 +83,7 @@ body > div:nth-of-type(even) {
 
 /* Grid Item */
 .item {
-  margin: 1px;
   background: tomato;
   text-align: center;
   font-size: 1.5em;
 }
-
-/* .grid {
-  max-width: 400px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-} */
