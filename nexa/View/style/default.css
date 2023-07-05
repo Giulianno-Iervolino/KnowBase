@@ -1,13 +1,64 @@
 html {
-  min-height: 100%;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  margin: 0px;
 }
 body {
-  background-color: antiquewhite;
-  background-repeat: no-repeat;
-  max-width: 1fr;
-  height: 100%;
+  margin: 0px;
+  font-family: monospace;
+  color: #333;
+  min-height: 100vh;
 }
+
+body > div:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid-template-areas {
+  margin: 0px;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: 15% auto 10%;
+  grid-template-areas:
+    "head head head"
+    "sideA content sideB"
+    "footer footer footer";
+}
+
+.head {
+  grid-area: head;
+}
+.head header {
+  background-image: url("nexa/View/img/nexa_logo.png");
+}
+
+.sideA {
+  grid-area: sideA;
+}
+.sideB {
+  grid-area: sideB;
+}
+
+.content {
+  grid-area: content;
+  min-height: 100vh;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Grid Item */
+.item {
+  margin: 1px;
+  background: tomato;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* .grid {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+} */
