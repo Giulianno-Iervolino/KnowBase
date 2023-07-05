@@ -6,23 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>NexaSaude</title>
-    <script src="https://kit.fontawesome.com/34719e2b76.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
-    <script>
-        (function () {
-            window.onload = function () {
-                new BlipChat()
-                    .withAppKey('cm91dGVybmV4YTplOGMzMjkyMy04NjQzLTQ1NDAtYTdjNS1hZGM2Nzg2NWMyNWE=')
-                    .withButton({ "color": "#302982", "icon": "https://blipmediastore.blob.core.windows.net/public-medias/Media_795d036e-7f20-4ca1-a35c-a822174e3f70" })
-                    .withCustomCommonUrl('https://giulianno-iervolino-cbzqp.chat.blip.ai/')
-                    .build();
-            }
-        })();
-    </script>
-
     <link rel="stylesheet" href="/nexa/View/style/default.css">
+    <title>NexaSaude</title>
+
 </head>
 
 <body>
@@ -45,5 +31,18 @@
         <div class="footer"></div>
     </div>
 </body>
+<script src="https://kit.fontawesome.com/34719e2b76.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+                .withAppKey('cm91dGVybmV4YTplOGMzMjkyMy04NjQzLTQ1NDAtYTdjNS1hZGM2Nzg2NWMyNWE=')
+                .withButton({ "color": "#302982", "icon": "https://blipmediastore.blob.core.windows.net/public-medias/Media_795d036e-7f20-4ca1-a35c-a822174e3f70" })
+                .withCustomCommonUrl('https://giulianno-iervolino-cbzqp.chat.blip.ai/')
+                .build();
+        }
+    })();
+</script>
 
 </html>
