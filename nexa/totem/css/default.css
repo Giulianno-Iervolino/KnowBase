@@ -1,0 +1,89 @@
+html {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  font-family: monospace;
+  color: #333;
+  min-height: 100vh;
+}
+
+body > div:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+.grid-template-areas {
+  margin: 0px;
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: 6% 15% auto 10%;
+  grid-template-areas:
+    "cnt  cnt cnt"
+    "head head head"
+    "sideA content sideB"
+    "footer footer footer";
+}
+
+.cnt {
+  color: white;
+  display: grid;
+  grid-area: cnt;
+  background-color: rgb(48, 41, 130);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "eml  rsoc";
+}
+.cnt a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+}
+.eml {
+  grid-area: eml;
+  align-self: center;
+  text-align: center;
+}
+
+.rsoc {
+  grid-area: rsoc;
+  align-self: center;
+  text-align: center;
+}
+
+.head {
+  grid-area: head;
+  /* position: fixed; */
+  position: static;
+}
+.hdr {
+  background-image: url("../img/nexa_logo.png");
+  background-size: 300px 100px;
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+}
+
+.sideA {
+  grid-area: sideA;
+}
+.sideB {
+  grid-area: sideB;
+}
+
+.content {
+  grid-area: content;
+  min-height: 100vh;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* Grid Item */
+.item {
+  background: tomato;
+  text-align: center;
+  font-size: 1.5em;
+}
