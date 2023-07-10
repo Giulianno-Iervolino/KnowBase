@@ -6,7 +6,63 @@ body {
   font-family: monospace;
   color: #333;
   min-height: 100vh;
+  /* -------------------- */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------- */
+
+.shd {
+  box-shadow: 2px 2px 4px black;
+  background-color: rgb(48, 41, 130);
+}
+
+.carrossel {
+  overflow: hidden;
+  height: 500px;
+  width: 250px;
+}
+
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translate(0);
+}
+
+img {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+}
+
+.btn {
+  text-align: center;
+  /* background-color: rgb(88, 60, 121); */
+  /* background-color: blueviolet; */
+  border-radius: 5px 5px 0px 0px;
+  /* padding: 10px; */
+  color: white;
+  /* display: flex; */
+  /* background-color: gainsboro; */
+  /* z-index: -10; */
+}
+
+.btn a {
+  display: block;
+  color: white;
+  background-color: rgb(88, 60, 121);
+  border-radius: 5% 5% 0 0;
+  border: 5px;
+  padding: 5px;
+  min-width: auto;
+}
+/* -------------------- */
 
 body > div:nth-of-type(even) {
   background: rgba(0, 0, 0, 0.03);
