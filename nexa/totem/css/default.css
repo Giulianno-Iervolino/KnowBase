@@ -25,14 +25,14 @@ a {
 
 .carrossel {
   overflow: hidden;
-  height: 500px;
-  width: 250px;
+  height: 450px;
+  width: 280px;
 }
 
 .container {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  transform: translate(0);
+  transform: translateX(0);
 }
 
 img {
