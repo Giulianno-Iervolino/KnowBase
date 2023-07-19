@@ -15,5 +15,17 @@
 
 
 </body>
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+                .withAppKey('cm91dGVyYXRlbmRpbWVudG84OmQ4ZTZjZmZmLTRiMDEtNDY4Yi1iOThlLWU2YTQxY2Q5OTA4Nw==')
+                .withButton({ "color": "#18995d", "icon": "https://blipmediastore.blob.core.windows.net/public-medias/Media_cef2ee6b-7d5b-412c-9c93-e5d48c476be1" })
+                .withCustomCommonUrl('https://unimeduberlandia.chat.blip.ai/')
+                .build();
+        }
+    })();
+</script>
 
 </html>
